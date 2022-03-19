@@ -1,6 +1,6 @@
 # Xuzzle
 
-Old simple Puzzle game ported on W10M :)
+Old simple puzzle game "14-15" ported on W10M :)
 
 ## About 
 This is a variation of the classic 14-15 puzzle. On the early Mac, the 14-15 program was called PUZZLE.

@@ -17,13 +17,13 @@ namespace Xuzzle
 
 			// A Frame surrounding two Labels.
 			label = new Label {
-				Text = this.normText,
+				Text = (index + 1).ToString(),//this.normText,
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand
 			};
 
 			Label tinyLabel = new Label {
-				Text = (index + 1).ToString (),
+				Text = this.normText,//(index + 1).ToString (),
 				FontSize = Device.GetNamedSize (NamedSize.Micro, typeof(Label)),
 				HorizontalOptions = LayoutOptions.End
 			};
@@ -42,7 +42,7 @@ namespace Xuzzle
 			};
 
 			// Don't let touch pass us by.
-			this.BackgroundColor = Color.Transparent;
+			this.BackgroundColor = Color.LightGreen;//Color.Transparent;
 		}
 
 		// Retain current Row and Col position.

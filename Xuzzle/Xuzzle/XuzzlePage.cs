@@ -64,7 +64,7 @@ namespace Xuzzle
 
 			// This is the "Randomize" button.
 			randomizeButton = new Button {
-				Text = "Randomize",
+				Text = "START",
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand
 			};
@@ -95,14 +95,14 @@ namespace Xuzzle
 			stackLayout.SizeChanged += OnStackSizeChanged;
 
 			// And set that to the content of the page.
-			this.Padding = new Thickness(0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0);
+			this.Padding = new Thickness(20, 20, 20, 20); // 0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0
 			this.Content = stackLayout;
 		}
 
 		void OnStackSizeChanged (object sender, EventArgs args)
 		{
 			double width = stackLayout.Width;
-			double height = stackLayout.Height;
+			double height = stackLayout.Height - 100; // - 0;
 
 			if (width <= 0 || height <= 0)
 				return;

@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="01e8c93c-518b-42e1-b116-97f1be117847"
-    Publisher="CN=Dave"
+    Name="Xuzzle1"
+    Publisher="CN=media"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="01e8c93c-518b-42e1-b116-97f1be117847" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Xuzzle.UWP</DisplayName>
-    <PublisherDisplayName>Dave</PublisherDisplayName>
+    <PublisherDisplayName>mediaexplorer</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -37,8 +37,12 @@
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="Xuzzle.UWP"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="portrait"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
